@@ -1,0 +1,139 @@
+
+.header {
+    height: 110px;    
+    background: #000;
+}
+header .row {
+    height: inherit;
+}
+
+.navbar-brand {
+    padding-left: 34px;
+}
+
+.nav-item {
+    position: relative;
+    margin-left: 28px;
+}
+
+.active::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -14px;
+    background: #ffffff;
+}
+
+.nav-item a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-item::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    left: 0;
+    bottom: -14px;
+    background: #ffffff;
+    transition: .3s ease-in-out;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+.nav-item a {
+    font-family: "Montserrat-Regular";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.navbar-collapse {
+    background: #000000ed;
+}
+
+/* Контактная информация */
+
+.header-contacts {
+    padding-top: 3px;
+}
+
+.img-call {
+    margin-right: 20px;
+}
+
+.contact-phone {
+    display: inline-block;
+    margin-bottom: 9px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff; 
+}
+.contact-phone:hover {
+    color: #1d9f42;
+    text-decoration: none;
+}
+
+
+.work-time {
+    margin: 0;
+    font-family: "Montserrat-Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+}
+.work-time span {
+    padding-right: 3px;
+}
+
+@media (min-width: 1200px) and (max-width: 1225px) {
+    .contacts-block {
+        margin-left: 70px;
+        margin-right: 37px;
+    }    
+}
+
+@media (min-width: 1226px) {
+    .contacts-block {
+        margin-left: 90px;
+        margin-right: 37px;
+    }   
+
+}
+
+@media (max-width: 1199px) {
+    .active::before {
+        display: none;
+    }
+    .nav-item:after {
+        display: none;
+    }
+    .navbar-collapse {
+        position: relative;
+    }
+    .contacts-block {
+        position: absolute;
+        top: calc(50% - 37px);
+        right: calc(50% - 116px);
+    }
+    .navbar-nav {
+        padding-top: 42px;
+    }
+    
+}
