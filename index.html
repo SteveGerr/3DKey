@@ -11,13 +11,16 @@
 <body>
     
     <div class="wrapper">
-        <nav class="header navbar navbar-expand-xl navbar-dark">
-            <a class="navbar-brand" href="#">
-                <img src="/images/header/logo.svg" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+        <!-- Меню -->
+        <nav class="header d-none d-xl-block justify-content-between navbar navbar-expand-xl navbar-dark">
+            <div class="d-flex">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="/images/header/logo.svg" alt="">
+                </a>
+            </div>
             <div class="justify-content-end collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="top-menu navbar-nav">
                     <li class="nav-item active">
@@ -39,106 +42,761 @@
                         <a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">Контакты</a>
                     </li>
                 </ul>
-                <div class="contacts-block justify-content-center align-items-center">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <a href="tel:+73842650120">
-                            <img class="img-call" src="/images/header/call-icon.svg" alt="Изображение телефонной трубки">
-                        </a>
-                        <div class="header-contacts">
-                            <a class="contact-phone" href="tel:+73842650120">+7-384-265-01-20</a>
-                            <p class="work-time d-flex justify-content-between text-uppercase"><span>ПН-ПТ</span> 10.00 - 19.00</p>
-                            <p class="work-time d-flex justify-content-between text-uppercase"><span>СБ-ВС </span> 12.00 - 14.00</p>
-                        </div>
+            </div>
+            <div class="contacts-block justify-content-center align-items-center">
+                <div class="d-flex justify-content-center align-items-center">
+                    <a href="tel:+73842650120">
+                        <img class="img-call" src="/images/header/call-icon.svg" alt="Изображение телефонной трубки">
+                    </a>
+                    <div class="header-contacts">
+                        <a class="contact-phone" href="tel:+73842650120">+7-384-265-01-20</a>
+                        <p class="work-time d-flex justify-content-between text-uppercase"><span>ПН-ПТ</span> 10.00 - 19.00</p>
+                        <p class="work-time d-flex justify-content-between text-uppercase"><span>СБ-ВС </span> 12.00 - 14.00</p>
                     </div>
                 </div>
             </div>
           </nav>
-        <!-- Screen 1 -->        
-        <div class="screen-1 row">
-            <div class="col-xl-2"></div>
-            <div class="col-xl-6 col-lg-8">
-                <div class="d-flex justify-content-end">
-                    <div class="screen-1__txt">
-                        <h1 class="main-heading">СОЗДАНИЕ И СОПРОВОЖДЕНИЕ САЙТОВ ЛЮБОЙ СЛОЖНОСТИ</h1>
-                        <p>Мы поможем вам решить и воплатить в <br> жизнь любые интернет проекты, любой <br> сложности.</p>
+
+        <!-- КОнтент >1200 -->
+        <div class="desktop d-none d-xl-block">
+            <!-- Создание и сопровождение -->        
+            <div class="screen-1 row">
+                <div class="col-xl-2"></div>
+                <div class="col-xl-6 col-lg-8">
+                    <div class="d-flex justify-content-end">
+                        <div class="screen-1__txt">
+                            <h1 class="main-heading">СОЗДАНИЕ И СОПРОВОЖДЕНИЕ САЙТОВ ЛЮБОЙ СЛОЖНОСТИ</h1>
+                            <p>Мы поможем вам решить и воплатить в <br> жизнь любые интернет проекты, любой <br> сложности.</p>
+                            <button class="call-order btn btn-success">Заказать звонок</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-2"></div>
+                <div class="row">
+                    <div class="social-wrap col-12">
+                        <a class="social-icon" href="#" target="_blank" rel="noopener noreferrer">
+                            <img src="/images/screen-2/insta.svg" alt="инстаграм">
+                        </a>
+                        <a class="social-icon" href="#" target="_blank" rel="noopener noreferrer">
+                            <img src="/images/screen-2/fb.svg" alt="фейсбук">
+                        </a>
+                        <a class="social-icon" href="#" target="_blank" rel="noopener noreferrer">
+                            <img src="/images/screen-2/vk.svg" alt="В контакте">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Какие задачи -->
+            <div class="screen-2 row">
+                <div class="col-6">
+                    <div class="img-container d-flex justify-content-end">
+                        <img src="/images/screen-3/screen-2-img.png" alt="Разработчик, вид со спины">
+                    </div>
+                </div>
+                <div class="screen-2__left col-6">
+                    <h2>КАКИЕ ЗАДАЧИ МЫ<br> ПОМОЖЕМ ВАМ РЕШИТЬ</h2>
+                    <ul>
+                        <li>Интернет магазины.</li>
+                        <li>Эксклюзивные лендинги.</li>
+                        <li>Сайты по шаблону</li>
+                        <li>Полная настройка сайта и админ панели.</li>
+                        <li>Сайт любой сложности под ключ</li>
+                        <li>Обслуживания ваших сайтов.</li>
+                        <li>Доработка вашего сайта.</li>
+                        <li>Многостраничные сайты.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Как мы работаем -->
+            <div class="screen-3 row d-flex justify-content-center">
+                <div class="screen-3__central">
+                    <div class="justify-content-end">
+                        <div class="d-flex flex-column justify-content-end">
+                            <p class="step step-1 align-items-center"><span class="step-num step-num-1">1</span>Оставьте зайвку на звонок <br>обратной связи</p>
+                            <p class="step step-2 align-items-center"><span class="step-num pl-5 step-num-2">2</span>Дождитесь звонка от<br> нашего специалиста</p>
+                        </div>
+                        <div class="screen-3__how-we-work">
+                            <div class="d-flex flex-column">
+                                <h2>КАК МЫ РАБОТАЕМ</h2>
+                                <p class="mt-5 mb-5">
+                                    Весь технологический процесс полностью<br> идет в тесном сотрудничестве с клиентом<br> нашей компании
+                                </p>
+                                <button class="call-order btn btn-success mb-4">Заказать звонок</button>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <p class="d-flex justify-content-start align-items-center step step-3 align-items-center"><span class="step-num step-num-3">3</span>Расскажите нам о продукте который<br> вы хотите получить</p>
+                    </div>
+                    <div class="d-flex justify-content-end row">
+                        <div class="">
+                            <p class="d-flex justify-content-end align-items-center step step-4"><span class="step-num step-num-4">4</span>Используйте готовый продукт<br> для своих личных и безнес целей</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <!-- Стоимость услуг -->
+            <div class="cost row">
+                <div class="col"></div>
+                <div class="d-flex flex-column align-items-center col-10">
+                    <h2>СТОИМОСТЬ УСЛУГ</h2>
+                    <div class="service d-flex justify-content-between align-items-center">
+                        <p>СОЗДАНИЕ САЙТА ПОД КЛЮЧ</p>
+                        <p class="service__price">5000 руб.</p>
+                    </div>
+                    <div class="service d-flex justify-content-between align-items-center">
+                        <p>ОБСЛУЖИВАНИЕ ВАШИХ САЙТОВ</p>
+                        <p class="service__price">7000 руб.</p>
+                    </div>
+                    <div class="service d-flex justify-content-between align-items-center">
+                        <p>ДОРАБОТКА ВАШЕГО САЙТА</p>
+                        <p class="service__price">3000 руб.</p>
+                    </div>
+                    <div class="service d-flex justify-content-between align-items-center">
+                        <p>ИНТЕРНЕТ МАГАЗИН</p>
+                        <p class="service__price">10000 руб.</p>
+                    </div>
+                    <div class="service d-flex justify-content-between align-items-center">
+                        <p>ЭКCКЛЮЗИВНЫЕ ЛЕНДИНГИ</p>
+                        <p class="service__price">8000 руб.</p>
+                    </div>
+                    <button type="button" class="call-order btn btn-success">Заказать звонок</button>
+                </div>
+                <div class="col"></div>
+            </div>
+            <!-- О компании -->
+            <div class="about-company row">
+                <div class="d-flex flex-column align-items-start col">
+                    <h2>О КОМПАНИИ</h2>
+                    <p>
+                        Трикей - организация, объединяющая экспертов в области веб-технологий. Компания нацелена на 
+                        консолидацию сил успешных, практикующих специалистов в области IT,
+                        для решения задач любой сложности. В своей деятельности, мы руководствуемся тремя принципами:
+                    </p>
+                    <div class="principles d-flex flex-column">
+                        <div class="principle principle-1"><span>1</span> ЧЕСТНОСТЬ ПО<br> ОТНОШЕНИЮ К КЛИЕНТУ</div>
+                        <div class="principle"><span>2</span> ДОСТУПНОСТЬ И ПРОЗРАЧНОСТЬ<br> В ЦЕНОВОЙ ПОЛИТИКЕ</div>
+                        <div class="principle"><span>3</span> ОПЕРАТИВНОСТЬ В<br> РАЗРЕШЕНИИ ДЕЛ</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="about-company__img">
+                        <img src="/images/screen-4/about__img.png" alt="Офис">
+                    </div>
+                </div>
+            </div>
+            <!-- ОТзывы -->
+            <div class="comments row">
+                <h2 class="slider__heading">ОТЗЫВЫ КЛИЕНТОВ</h2>
+                <div class="slider">
+                    <div class="slider__wrapper">
+                        <div class="slider__item">
+                            <div class="slider__item-content">
+                                <div class="slider__client-name-wrap">
+                                    <div class="slider__client-name">Марина Сергеева</div>
+                                    <div class="slider__client-type">ПРЕДПРИНИМАТЕЛЬ</div>
+                                    <img class="slider__client-img" src="/images/slider/client-img.svg" alt="Иконка клиента">
+                                </div>
+                                <p class="slider__comment">
+                                    Спасибо юристам компании «3кей» за проделанную работу! 
+                                    Обращалась для раздела совместно нажитого имущества с бывшим мужем, 
+                                    все объяснили, помогли.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-content">
+                                <div class="slider__client-name-wrap">
+                                    <div class="slider__client-name">Кирил Баев</div>
+                                    <div class="slider__client-type">САМОЗАНЯТЫЙ</div>
+                                    <img class="slider__client-img" src="/images/slider/client-img.svg" alt="Иконка клиента">
+                                </div>
+                                <p class="slider__comment">
+                                    На сайте заказал звонок. Перезвонили быстро, дали полную консультацию,
+                                     позже пришел к ним в офис подписали договор, дело выиграли, спасибо за помощь.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-content">3</div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-content">4</div>
+                        </div>
+                    </div>
+                    <a class="slider__control slider__control_left" href="#" role="button"></a>
+                    <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+                    <div class="slider__bottom-control">
+                        <a class="slider__control-circle is-active" href="#" role="button"></a>           
+                        <a class="slider__control-circle" href="#" role="button"></a>
+                        <a class="slider__control-circle" href="#" role="button"></a>
+                        <a class="slider__control-circle" href="#" role="button"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Контакты -->
+            <div class="contacts justify-content-center row">
+                <div class="col">
+                    <h2 class="w-100">КОНТАКТЫ</h2>
+                    <div class="contacts__info row">
+                        <div class="contacts__phone-mail col-lg-6">
+                            <div class="contacts__info-wrap col-lg-6">
+                                <p>Телефон</p>
+                                <span>+7-384-265-01-20</span>
+                            </div>
+                            <div class="contacts__info-wrap col-lg-6">
+                                <p>E-mail:</p>
+                                <span>3key@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contacts__address-time col-lg-6">
+                            <div class="contacts__info-wrap col-lg-6">
+                                <p>Адрес:</p>
+                                <span>г. Кемерово,</span>
+                                <span class="d-inline-block">ул. Демьяна Бедного 6,<br> офис 38</span>                        
+                            </div>
+                            <div class="contacts__info-wrap col-lg-6">
+                                <p>Часы работы:</p>
+                                <span class="d-inline-block">ПН-ПТ 10:00 - 19:00</span>
+                                <span class="d-inline-block">СБ-ВС 12:00 - 14:00</span>                        
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            <!-- Карта -->
+            <div class="map row">
+                <img class="w-100" src="/images/map/map.png" alt="Карта">
+            </div>
+            <!-- Обратная связь -->
+            <div class="feedback row">
+                <form class="d-flex flex-column" action="">
+                    <h2>ОСТАЛИСЬ ВОПРОСЫ?</h2>
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" value="Илья Романов">
+                    <label for="">Ваш номер телефона:</label>
+                    <input class="text-left" type="text" id="phone" value="+7 ( - ) - -">
+                    <input type="button" class="call-order btn btn-success" value="Заказать звонок">
+                    <p>Звонок бесплатный</p>
+                </form>
+            </div>
+            <!-- Footer desk -->
+            <footer class="d-flex justify-content-center row">
+                <div class="footer__content">
+                    <div class="d-flex flex-column align-items-start justify-content-between col">
+                        <img src="/images/header/logo.svg" alt="">
+                        <p class="m-0">© 3key.ru 2020</p>
+                    </div>
+                    <div class="footer__address d-flex flex-column align-items-start justify-content-between  col">
+                        <p>г.Кемерово,<br> ул. Демьяна Бедного 6, офис 38</p>
+                        <p class="m-0">ПН-ПТ 10:00 - 19:00 <br> СБ-ВС 12:00 - 14:00</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-start justify-content-between col">
+                        <a class="d-flex" target="_blank" href="#">ГЛАВНАЯ</a>
+                        <a class="d-flex flex-nowrap" target="_blank" href="#">НАШИ НАПРАВЛЕНИЯ</a>
+                        <a class="d-flex" target="_blank" href="#">ОТЗЫВЫ</a>
+                    </div>
+                    <div class="d-flex flex-column align-items-start justify-content-between col">
+                        <a class="d-flex" target="_blank" href="#">О НАС</a>
+                        <a class="d-flex" target="_blank" href="#">КОНТАКТЫ</a>
+                        <a class="d-flex invisible" target="_blank" href="#">пустышка</a>
+                    </div>
+                    <div class="d-flex flex-column align-items-start justify-content-between col">
+                        <a class="d-flex" href="tel:+73842650120">+7-384-265-01-20</a class="d-flex">
+                        <a class="d-flex" href="mailto:3key@gmail.com">3key@gmail.com</a>   
+                        <div class="row">
+                            <a class="d-flex" href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="/images/footer/footer__fb.svg" alt="фейсбук">
+                            </a>
+                            <a class="d-flex ml-5 mr-5" href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="/images/footer/footer__insta.svg" alt="инстаграм">
+                            </a>
+                            <a class="d-flex" href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="/images/footer/footer__VK.svg" alt="В контакте">
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+            </footer>
+        </div>
+        
+        <!-- Контент >=768 - <1200 -->
+        <!-- Tablet -->
+        <div class="tablet d-none d-md-block d-xl-none">
+            <div class="container-fluid">
+                
+                <div class="screen-1-t row">
+                    <div class="col">
+                        <!-- Меню -->
+                        <nav class="header header-t justify-content-between navbar navbar-expand-xl navbar-dark">
+                            <div class="d-flex">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">
+                                    <img src="/images/header/logo.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="justify-content-end collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <ul class="top-menu navbar-nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">Главная</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">Услуги</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">Прайс</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">О компании</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">Отзывы</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">Контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contacts-block justify-content-center align-items-center">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <a href="tel:+73842650120">
+                                        <img class="img-call" src="/images/header/call-icon.svg" alt="Изображение телефонной трубки">
+                                    </a>
+                                    <div class="header-contacts tablet">
+                                        <a class="contact-phone" href="tel:+73842650120">+7-384-265-01-20</a>
+                                        <p class="work-time d-flex justify-content-between text-uppercase"><span>ПН-ПТ</span> 10.00 - 19.00</p>
+                                        <p class="work-time d-flex justify-content-between text-uppercase"><span>СБ-ВС </span> 12.00 - 14.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+
+                        <h1>Простое решение сложных вопросов</h1>
+                        <p class="screen-1-t__txt">
+                            Квалифицированная помощь в сфере правовой поддержки, 
+                            продвижения бизнеса, разработке интернет-ресурсов
+                        </p>
+                        <button class="call-order btn btn-success">Заказать звонок</button>
+                    </div>
+
+                </div>
+
+                <!-- НАши направления -->
+                <div class="row">
+                    <div class="our-direction col">
+                        <h2>НАШИ НАПРАВЛЕНИЯ</h2>
+                        <div class="d-flex justify-content-around flex-row flex-wrap">
+                            <div class="our-direction__card d-flex flex-column col-6">
+                                <img src="/images/tablet/our-directions/web-service.png" alt="ноутбук">
+                                <p>Веб-услуги</p>
+                                <a href="#" target="_blank" rel="noopener noreferrer">Подробнее</a>                        
+                            </div>
+                            <div class="our-direction__card d-flex flex-column col-6">
+                                <img src="/images/tablet/our-directions/legal.png" alt="ноутбук">
+                                <p>Юридические услуги</p>
+                                <a href="#" target="_blank" rel="noopener noreferrer">Подробнее</a>                        
+                            </div>
+    
+                            <div class="our-direction__card d-flex flex-column col-6">
+                                <img src="/images/tablet/our-directions/consulting.png" alt="ноутбук">
+                                <p>Консалтинговые услуги</p>
+                                <a href="#" target="_blank" rel="noopener noreferrer">Подробнее</a>                        
+                            </div>
+    
+                            <div class="our-direction__card d-flex flex-column col-6">
+                                <img src="/images/tablet/our-directions/accounting.png" alt="ноутбук">
+                                <p>Бухгалтерские услуги</p>
+                                <a href="#" target="_blank" rel="noopener noreferrer">Подробнее</a>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- О нас -->
+                <div class="about-us-t row">
+                    <div class="col pr-0">
+                        <h2>О нас</h2>
+                        <p class="m-0">Трикей - организация, объединяющая экспертов в области права. 
+                            Компания нацелена на консолидацию сил успешных, практикующих специалистов в области,
+                            для защиты прав и интересов граждан и организаций. В своей деятельности, 
+                            мы руководствуемся тремя принципами:
+                        </p>
+                        <div class="principles d-flex flex-column">
+                            <div class="principle principle-1"><span>1</span> ЧЕСТНОСТЬ ПО<br> ОТНОШЕНИЮ К КЛИЕНТУ</div>
+                            <div class="principle"><span>2</span> ДОСТУПНОСТЬ И ПРОЗРАЧНОСТЬ<br> В ЦЕНОВОЙ ПОЛИТИКЕ</div>
+                            <div class="principle"><span>3</span> ОПЕРАТИВНОСТЬ В<br> РАЗРЕШЕНИИ ДЕЛ</div>
+                        </div>    
+                    </div>
+                    <div class="d-flex justify-content-center col-6">
+                        <img src="/images/screen-4/about__img.png" alt="офис">
+                    </div>
+                </div>
+
+                <!-- Отзывы клиентов -->
+                <div class="comments row">
+                    <h2 class="slider__heading">ОТЗЫВЫ КЛИЕНТОВ</h2>
+                    <div class="slider">
+                        <div class="slider__wrapper">
+                            <div class="slider__item">
+                                <div class="slider__item-content">
+                                    <div class="slider__client-name-wrap">
+                                        <div class="slider__client-name">Марина Сергеева</div>
+                                        <div class="slider__client-type">ПРЕДПРИНИМАТЕЛЬ</div>
+                                        <img class="slider__client-img" src="/images/slider/client-img.svg" alt="Иконка клиента">
+                                    </div>
+                                    <p class="slider__comment">
+                                        Спасибо юристам компании «3кей» за проделанную работу! 
+                                        Обращалась для раздела совместно нажитого имущества с бывшим мужем, 
+                                        все объяснили, помогли.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__item-content">
+                                    <div class="slider__client-name-wrap">
+                                        <div class="slider__client-name">Кирил Баев</div>
+                                        <div class="slider__client-type">САМОЗАНЯТЫЙ</div>
+                                        <img class="slider__client-img" src="/images/slider/client-img.svg" alt="Иконка клиента">
+                                    </div>
+                                    <p class="slider__comment">
+                                        На сайте заказал звонок. Перезвонили быстро, дали полную консультацию,
+                                         позже пришел к ним в офис подписали договор, дело выиграли, спасибо за помощь.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__item-content">3</div>
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__item-content">4</div>
+                            </div>
+                        </div>
+                        <a class="slider__control slider__control_left" href="#" role="button"></a>
+                        <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+                        <div class="slider__bottom-control">
+                            <a class="slider__control-circle is-active" href="#" role="button"></a>           
+                            <a class="slider__control-circle" href="#" role="button"></a>
+                            <a class="slider__control-circle" href="#" role="button"></a>
+                            <a class="slider__control-circle" href="#" role="button"></a>
+                        </div>
+                    </div>    
+                </div>
+
+                <!-- Контакты -->
+                <div class="contacts row">
+                    <h2>КОНТАКТЫ</h2>
+                    <div class="d-flex w-100">
+                        <div class="contacts__info-wrap col-6">
+                            <p>Телефон</p>
+                            <span>+7-384-265-01-20</span>
+                        </div>
+                        <div class="contacts__info-wrap col-6">
+                            <p>Адрес:</p>
+                            <span>г. Кемерово,</span><br>
+                            <span class="d-inline-block">ул. Демьяна Бедного 6, офис 38</span>                        
+                        </div>
+                    </div>
+                    <div class="d-flex w-100 mt-5">
+                        <div class="contacts__info-wrap col-6">
+                            <p>E-mail:</p>
+                            <span>3key@gmail.com</span>
+                        </div>
+                        <div class="contacts__info-wrap col-6">
+                            <p>Часы работы:</p>
+                            <span class="d-block">ПН-ПТ 10:00 - 19:00</span>
+                            <span class="d-block">СБ-ВС 12:00 - 14:00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карта -->
+                <div class="map row">
+                    <img class="w-100" src="/images/map/map.png" alt="Карта">
+                </div>
+                <!-- Обратная связь -->
+                <div class="feedback row">
+                    <form class="d-flex flex-column" action="">
+                        <h2>ОСТАЛИСЬ ВОПРОСЫ?</h2>
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" value="Илья Романов">
+                        <label for="">Ваш номер телефона:</label>
+                        <input class="text-left" type="text" id="phone" value="+7 ( - ) - -">
+                        <input type="button" class="call-order btn btn-success" value="Заказать звонок">
+                        <p>Звонок бесплатный</p>
+                    </form>
+                </div>
+                <!-- footer -->
+                <footer class="d-flex justify-content-between row">
+                    <div class="d-flex flex-column justify-content-end mt-3 col-4">
+                        <p class="mt-5 mb-2">ПН-ПТ 10:00 - 19:00 <br> СБ-ВС 12:00 - 14:00</p>
+                        <p class="mb-4">г.Кемерово,<br> ул. Демьяна Бедного 6, офис 38</p>
+                        <p class="m-0">© 3key.ru 2020</p>
+                    </div>
+                    <div class="footer__pages-link col-4">
+                        <a class="d-flex flex-nowrap" target="_blank" href="#">ГЛАВНАЯ</a>
+                        <a class="d-flex flex-nowrap" target="_blank" href="#">НАШИ НАПРАВЛЕНИЯ</a>
+                        <a class="d-flex flex-nowrap" target="_blank" href="#">О НАС</a>
+                        <a class="d-flex flex-nowrap" target="_blank" href="#">ОТЗЫВЫ</a>
+                        <a class="d-flex flex-nowrap" target="_blank" href="#">КОНТАКТЫ</a>
+                    </div>
+                    <div class="footer__contacts col-4">
+                        <a class="d-flex footer__phone" href="tel:+73842650120">+7-384-265-01-20</a>
+                        <a class="d-flex footer__mail" href="mailto:3key@gmail.com">3key@gmail.com</a>   
+                        <div class="footer__social-icons d-flex justify-content-between row">
+                            <a class="footer__fb d-flex" href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="/images/footer/footer__fb.svg" alt="фейсбук">
+                            </a>
+                            <a class="footer__insta d-flex" href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="/images/footer/footer__insta.svg" alt="инстаграм">
+                            </a>
+                            <a class="footer__vk d-flex" href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="/images/footer/footer__VK.svg" alt="В контакте">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <!-- mobile -->
+        <div class="mobile d-md-none d-lg-none d-xl-none">
+
+            <div class="screen-1-m row">
+                <div class="d-flex flex-column">
+                    <!-- Меню -->
+                    <nav class="header justify-content-between navbar navbar-expand-xl navbar-dark">
+                        <div class="nav__burger-wrap d-flex">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">
+                                <img src="/images/header/logo.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="contacts-block justify-content-center align-items-center">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="header-contacts tablet">
+                                    <a class="contact-phone" href="tel:+73842650120">+7-384-265-01-20</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="justify-content-end collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <ul class="top-menu navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">Главная</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">Услуги</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">Прайс</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">О компании</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">Отзывы</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>            
+
+                    <div class="screen-1-m__content d-flex flex-column align-items-center text-center">
+                        <h1>Простое решение сложных вопросов</h1>
+                        <p class="screen-1-t__txt">
+                            Квалифицированная помощь в сфере правовой поддержки, 
+                            продвижения бизнеса, разработке интернет-ресурсов
+                        </p>
                         <button class="call-order btn btn-success">Заказать звонок</button>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-2"></div>
+
+            <!-- НАши направления -->
             <div class="row">
-                <div class="social-wrap col-12">
-                    <a class="social-icon" href="#" target="_blank" rel="noopener noreferrer">
-                        <img src="/images/screen-2/insta.svg" alt="инстаграм">
-                    </a>
-                    <a class="social-icon" href="#" target="_blank" rel="noopener noreferrer">
-                        <img src="/images/screen-2/fb.svg" alt="фейсбук">
-                    </a>
-                    <a class="social-icon" href="#" target="_blank" rel="noopener noreferrer">
-                        <img src="/images/screen-2/vk.svg" alt="В контакте">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- Screen-2 -->
-        <div class="screen-2 row">
-            <div class="col-6">
-                <div class="img-container d-flex justify-content-end">
-                    <img src="/images/screen-3/screen-2-img.png" alt="Разработчик, вид со спины">
-                </div>
-            </div>
-            <div class="screen-2__left col-6">
-                <h2>КАКИЕ ЗАДАЧИ МЫ<br> ПОМОЖЕМ ВАМ РЕШИТЬ</h2>
-                <ul>
-                    <li>Интернет магазины.</li>
-                    <li>Эксклюзивные лендинги.</li>
-                    <li>Сайты по шаблону</li>
-                    <li>Полная настройка сайта и админ панели.</li>
-                    <li>Сайт любой сложности под ключ</li>
-                    <li>Обслуживания ваших сайтов.</li>
-                    <li>Доработка вашего сайта.</li>
-                    <li>Многостраничные сайты.</li>
-                </ul>
-            </div>
-        </div>
-        <!-- Screen-3 -->
-        <div class="screen-3 row">
-            <div class="col-12">
-                <div class="justify-content-end row">
-                    <div class="d-flex flex-column justify-content-end col-6">
-                        <p class="d-flex justify-content-start align-items-center step"><span class="step-num step-num-1">1</span>Оставьте зайвку на звонок <br>обратной связи</p>
-                        <p class="d-flex justify-content-center align-items-center pl-5 step"><span class="step-num pl-5 step-num-2">2</span>Дождитесь звонка от<br> нашего специалиста</p>
-                    </div>
-                    <div class="col-6 pb-5">
-                        <div class="d-flex flex-column">
-                            <h2>КАК МЫ РАБОТАЕМ</h2>
-                            <p class="mt-5 mb-5">
-                                Весь технологический процесс полностью<br> идет в тесном сотрудничестве с клиентом<br> нашей компании
-                            </p>
-                            <button class="call-order btn btn-success mb-4">Заказать звонок</button>
+                <div class="our-direction col">
+                    <h2>НАШИ НАПРАВЛЕНИЯ</h2>
+                    <div class="d-flex justify-content-around flex-row flex-wrap">
+                        <div class="our-direction__card d-flex flex-column col-6">
+                            <img src="/images/tablet/our-directions/web-service.png" alt="ноутбук">
+                            <p>Веб-услуги</p>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Подробнее</a>                        
                         </div>
-                    </div>                    
-                </div>
-                <div class="d-flex justify-content-center row">
-                    <p class="d-flex justify-content-start align-items-center step"><span class="step-num step-num-3">3</span>Расскажите нам о продукте который<br> вы хотите получить</p>
-                </div>
-                <div class="d-flex justify-content-end row">
-                    <div class="col-10">
-                        <p class="d-flex justify-content-end align-items-center step"><span class="step-num step-num-4">4</span>Используйте готовый продукт<br> для своих личных и безнес целей</p>
+                        <div class="our-direction__card d-flex flex-column col-6">
+                            <img src="/images/tablet/our-directions/legal.png" alt="ноутбук">
+                            <p>Юридические услуги</p>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Подробнее</a>                        
+                        </div>
+
+                        <div class="our-direction__card d-flex flex-column col-6">
+                            <img src="/images/tablet/our-directions/consulting.png" alt="ноутбук">
+                            <p>Консалтинговые услуги</p>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Подробнее</a>                        
+                        </div>
+
+                        <div class="our-direction__card d-flex flex-column col-6">
+                            <img src="/images/tablet/our-directions/accounting.png" alt="ноутбук">
+                            <p>Бухгалтерские услуги</p>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Подробнее</a>                        
+                        </div>
                     </div>
-                    <div class="col-2"></div>                    
                 </div>
-                <div class="row"></div>
-                <div class="row"></div>
             </div>
-        </div>
-        <div class="row">4</div>
-        <div class="row">5</div>
-        <div class="row"></div>
-        <div class="row"></div>
-        <div class="row"></div>
-        <div class="row"></div>
-        <div class="row"></div>
+            
+            <!-- О нас -->
+            <div class="about-us-t row">
+                <div class="d-flex flex-column align-items-center col-12">
+                    <h2 class="text-center">О НАС</h2>
+                    <p class="m-0">Трикей - организация, объединяющая экспертов в области права. 
+                        Компания нацелена на консолидацию сил успешных, практикующих специалистов в области,
+                        для защиты прав и интересов граждан и организаций. В своей деятельности, 
+                        мы руководствуемся тремя принципами:
+                    </p>
+                    <div class="principles d-flex flex-column">
+                        <div class="principle principle-1"><span>1</span> ЧЕСТНОСТЬ ПО<br> ОТНОШЕНИЮ К КЛИЕНТУ</div>
+                        <div class="principle principle-2"><span>2</span> ДОСТУПНОСТЬ И ПРОЗРАЧНОСТЬ<br> В ЦЕНОВОЙ ПОЛИТИКЕ</div>
+                        <div class="principle"><span>3</span> ОПЕРАТИВНОСТЬ В<br> РАЗРЕШЕНИИ ДЕЛ</div>
+                    </div>
+                    <button class="call-order btn btn-success mr-auto ml-auto">Заказать звонок</button>   
+                    <div class="d-flex justify-content-center w-100">
+                        <img src="/images/screen-4/about-us__mob.png" alt="офис">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ОТзывы -->
+            <div class="comments row">
+                <h2 class="slider__heading">ОТЗЫВЫ КЛИЕНТОВ</h2>
+                <div class="slider">
+                    <div class="slider__wrapper">
+                        <div class="slider__item">
+                            <div class="slider__item-content">
+                                <div class="slider__client-name-wrap">
+                                    <div class="slider__client-name">Марина Сергеева</div>
+                                    <div class="slider__client-type">ПРЕДПРИНИМАТЕЛЬ</div>
+                                    <img class="slider__client-img" src="/images/slider/client-img.svg" alt="Иконка клиента">
+                                </div>
+                                <p class="slider__comment">
+                                    Спасибо юристам компании «3кей» за проделанную работу! 
+                                    Обращалась для раздела совместно нажитого имущества с бывшим мужем, 
+                                    все объяснили, помогли.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-content">
+                                <div class="slider__client-name-wrap">
+                                    <div class="slider__client-name">Кирил Баев</div>
+                                    <div class="slider__client-type">САМОЗАНЯТЫЙ</div>
+                                    <img class="slider__client-img" src="/images/slider/client-img.svg" alt="Иконка клиента">
+                                </div>
+                                <p class="slider__comment">
+                                    На сайте заказал звонок. Перезвонили быстро, дали полную консультацию,
+                                        позже пришел к ним в офис подписали договор, дело выиграли, спасибо за помощь.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-content">3</div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-content">4</div>
+                        </div>
+                    </div>
+                    <a class="slider__control slider__control_left" href="#" role="button"></a>
+                    <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+                    <div class="slider__bottom-control">
+                        <a class="slider__control-circle is-active" href="#" role="button"></a>           
+                        <a class="slider__control-circle" href="#" role="button"></a>
+                        <a class="slider__control-circle" href="#" role="button"></a>
+                        <a class="slider__control-circle" href="#" role="button"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Контакты -->
+            <div class="contacts row">
+                <h2>КОНТАКТЫ</h2>
+                <div class="contacts__info-wrap col-12 mb-4">
+                    <p>Телефон:</p>
+                    <span>+7-384-265-01-20</span>
+                </div>
+                <div class="contacts__info-wrap col-12 mb-4">
+                    <p>E-mail:</p>
+                    <span>3key@gmail.com</span>
+                </div>
+                <div class="contacts__info-wrap col-12 mb-5">
+                    <p>Адрес:</p>
+                    <span>г. Кемерово,</span><br>
+                    <span class="d-inline-block">ул. Демьяна Бедного 6, офис 38</span>                        
+                </div>
+                <div class="contacts__info-wrap col-12 mb-4">
+                    <p>Часы работы:</p>
+                    <span class="d-block">ПН-ПТ 10:00 - 19:00</span>
+                    <span class="d-block">СБ-ВС 12:00 - 14:00</span>
+                </div>
+            </div>
+
+            <!-- Карта -->
+            <div class="map row">
+                <img class="w-100" src="/images/map/map.png" alt="Карта">
+            </div>
+            
+            <!-- Обратная связь -->
+            <div class="feedback row">
+                <form class="d-flex flex-column align-items-center" action="">
+                    <h2>ОСТАЛИСЬ ВОПРОСЫ?</h2>
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" value="Илья Романов">
+                    <label for="">Ваш номер телефона:</label>
+                    <input class="text-left" type="text" id="phone" value="+7 ( - ) - -">
+                    <input type="button" class="call-order btn btn-success" value="Заказать звонок">
+                    <p>Звонок бесплатный</p>
+                </form>
+            </div>
+            
+            <!-- footer -->
+            <footer class="d-flex justify-content-between row">
+                <div class="d-flex flex-column col">
+                    <div class="d-flex flex-column justify-content-end">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img src="/images/header/logo.svg" alt="">
+                        </a>
+                        <p class="mt-4 mb-2">ПН-ПТ 10:00 - 19:00 <br> СБ-ВС 12:00 - 14:00</p>
+                        <p class="mb-5">г.Кемерово,<br> ул. Демьяна Бедного 6, офис 38</p>
+                    </div>
+                    <div class="footer__pages-link">
+                        <a class="d-flex flex-nowrap" target="_blank" href="#">ГЛАВНАЯ</a>
+                        <a class="d-flex flex-nowrap" target="_blank" href="#">НАШИ НАПРАВЛЕНИЯ</a>
+                        <a class="d-flex flex-nowrap" target="_blank" href="#">О НАС</a>
+                        <a class="d-flex flex-nowrap" target="_blank" href="#">ОТЗЫВЫ</a>
+                        <a class="d-flex flex-nowrap" target="_blank" href="#">КОНТАКТЫ</a>
+                    </div>
+                    <div class="footer__contacts">
+                        <a class="d-flex footer__phone mb-2" href="tel:+73842650120">+7-384-265-01-20</a>
+                        <a class="d-flex footer__mail mb-5" href="mailto:3key@gmail.com">3key@gmail.com</a>   
+                        <div class="footer__social-icons d-flex justify-content-start mb-4 row">
+                            <a class="footer__fb d-flex" href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="/images/footer/footer__fb.svg" alt="фейсбук">
+                            </a>
+                            <a class="footer__insta d-flex ml-3 mr-3" href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="/images/footer/footer__insta.svg" alt="инстаграм">
+                            </a>
+                            <a class="footer__vk d-flex" href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="/images/footer/footer__VK.svg" alt="В контакте">
+                            </a>
+                        </div>
+                        <p class="m-0">© 3key.ru 2020</p>
+                    </div>
+                </div>
+            </footer>
+            
+        </div> 
     </div>
 
 

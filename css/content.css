@@ -10,7 +10,7 @@
     color: #2B2B2B;
 }
 
-/* Screen 1 */
+/* Создание и сопровождение */
 .screen-1 {
     background: url("/images/screen-2/screen-2__img.png");
     background-repeat: no-repeat;
@@ -31,17 +31,6 @@
     margin: 120px 2% 68px 0;
 }
 
-.call-order {
-    width: 329px;
-    height: 82px;
-    font-size: 24px;
-    border-radius: 10px!important;
-    -webkit-border-radius: 10px!important;
-    -moz-border-radius: 10px!important;
-    -ms-border-radius: 10px!important;
-    -o-border-radius: 10px!important;
-}
-
 .social-wrap {
     margin: 20px;
     padding-left: 50px;
@@ -58,14 +47,10 @@
     object-fit: contain;
 }
 
-/* Screen 2 */
+/* Какие задачи */
 .screen-2 {
     margin-top: 30px;
     background: #F4F4F4;
-}
-.screen-2 h2 {
-    font-size: 37px;
-    line-height: 45px;
 }
 .screen-2 ul {
     padding-top: 15px;
@@ -96,11 +81,12 @@
     padding-right: 30px;
 }
 
-/* screen-3 */
+/* Как мы работаем */
 .screen-3 {
-    padding: 120px 33px 140px 210px;
+    padding: 185px 0 140px 0;
     background: url("/images/screen-3/screen-3__bg.png");
-    background-size: cover;
+    background-size: 100%;
+    background-position: center;
     background-repeat: no-repeat;
     color: #ffffff;
 
@@ -108,15 +94,43 @@
 .screen-3 h2 {
     margin: 0;
     font-weight: bold;
-    font-size: 37px;
-    line-height: 45px;
     color: #ffffff;
 }
+.screen-3__central {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1133px;
+    margin: 0 auto;
+    position: relative;
+    background: transparent;
+}
+.screen-3__how-we-work {
+    position: absolute;
+    top: -62px;
+    right: -25px;
+}
+@media (max-width: 1300px) {
+    .screen-3__how-we-work {
+        top: -30px;
+        right: 35px;
+    }
+}
+
 .step {
+    display: flex;
+    width: 100%;
     font-family: "Montserrat-Bold";
     font-size: 21px;
     line-height: 26px;    
 }
+.step-2 {
+    padding-left: 155px;
+}
+.step-3 {
+    padding-left: 413px;
+}
+
 .step-num:after {
     content: "";
     position: absolute;
@@ -146,10 +160,220 @@
 .step-num-3:after,
 .step-num-4:after {
     left: -190px;
+}
+
+/* Стоимость услуг */
+.cost {
+    padding: 120px 0;
+}
+.cost h2 {
+    margin-bottom: 70px;
+}
+.cost .call-order {
+    margin-top: 80px;
+}
+.service {
+    flex-direction: row;
+    width: 100%;
+    max-width: 1180px;
+    height: 100px;
+    margin: 6px 0;
+    padding: 0 45px;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.service p {
+    margin: 0;
+    font-size: 21px;
+    color: #1D1D1D;
+}
+.service__price {
+    position: relative;
+    width: 115px;
+    text-align: left;
+    text-transform: none;
+}
+
+.service__price::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 29px;
+    background: #28BE52;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: -37px;
+}
+
+/* О компании */
+.about-company {
+    padding: 125px 0 195px 195px;
+    background: url("/images/screen-3/screen-3__bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.about-company h2 {
+    color: #ffffff;
+    margin: 0 0 45px 0;
+}
+.about-company p{
+    max-width: 535px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+.principles {
+    margin: 80px 0 0 0;
+}
+.principle {
+    height: 80px;
+    margin: 0 0 40px 0;
+    padding: 0 0 0 90px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    position: relative;
+}
+.principle::after {
+    content: "";
+    position: absolute;
+    top: -24px;
+    left: -8px;
+    width: 200px;
+    height: 80px;
+    background: url("/images/screen-4/green-circle-line.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.principle span {
+    position: absolute;
+    top: 4px;
+    left: 22px;
+    font-weight: bold;
+    font-size: 52px;
+    font-family: "Montserrat-Bold";
+}
+.principle-1 span{
+    left: 27px;
+}
+.about-company__img {
+    display: flex;
+    width: 100%;
+    max-width: 480px;
+}
+.about-company__img img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+}
+
+/* Отзывы клиентов */
+.comments {
+    padding: 125px 85px;
+    background: #F4F4F4;
+}
+
+/* Контакты */
+.contacts {
+    padding: 120px 11% 70px 11%;
+}
+.contacts h2 {
+    max-width: 1250px;
+    margin: 0 0 80px 0;
+    padding: 0 0 0 30px;
+}
+.contacts p {
+    font-family: "Montserrat-Bold";
+    font-size: 24px;
+    color: #000000;
+}
+.contacts span {
+    font-size: 18px;
+}
+.contacts__phone-mail,
+.contacts__address-time {
+    display: flex;    
+}
+.contacts__info-wrap {
+    min-width: 246px;
+}
+
+/* ОБратная связь */
+.feedback {
+    padding: 125px 0 215px 0;
+    background: url("/images/feedback/feedback__bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+form {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+form label {
+    font-size: 18px;
+    text-align: center;
 } 
+form input {
+    margin: 20px 0 60px 0;
+    padding: 0 0 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 24px;
+    color: #FFFFFF;
+}
+#phone {
+    margin-bottom: 110px;
+    padding: 0 0 0 105px;
+}
+form input:focus {
+    outline: none;
+}
+form h2 {
+    margin: 0 0 85px 0;
+}
+form p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5)
+}
+form h2, input, label {
+    color: #ffffff;
+}
+form .call-order {
+    margin: 0 auto 30px;
+    font-family: "Montserrat-Regular";
+}
 
-
-
+/* footer */
+footer {
+    margin: 25px 11% 40px 11%;
+    background: #000000;
+    color: #FFFFFF;
+}
+.footer__content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1240px;
+    margin: 30px 11% 40px 11%;
+}
+.footer__address {
+    min-width: 300px;
+}
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
 
 @media (min-width: 993px) and (max-width: 1500px) {
     .main-heading {

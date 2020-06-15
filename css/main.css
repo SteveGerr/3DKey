@@ -1,5 +1,8 @@
 @import url("/css/header.css");
 @import url("/css/content.css");
+@import url("/css/slider.css");
+@import url("/css/content-t.css");
+@import url("/css/content-m.css");
 
 @font-face {
     font-family: "Montserrat-Regular"; 
@@ -12,12 +15,19 @@
     src: url("/fonts/Montserrat-Bold.ttf") format("truetype"); 
     font-weight: bold; 
 }
-h1, h2, p, button {
+p, button, div {
     font-family: "Montserrat-Regular";
 }
 h1, h2 {
     font-family: "Montserrat-Bold";
     text-transform: uppercase;
+}
+h2 {
+    font-weight: bold;
+    font-size: 37px;
+}
+.container-fluid {
+    padding: 0;
 }
 .row {
     margin: 0;
@@ -25,14 +35,41 @@ h1, h2 {
 body {
     overflow-x: hidden;
 }
-/* .wrapper {
-    width: 1600px;
-    margin: 0 auto;
-    overflow-x: hidden;
-} */
 .img-container {
     width: 100%;
     max-height: 100vh;
 }
 
+/* Кнопка заказать звонок */
+.call-order {
+    width: 329px;
+    height: 82px;
+    font-size: 24px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+@media (max-width: 1199px) {
 
+    .call-order {
+        width: 218px;
+        height: 55px;
+        margin: 35px 0 50px 0;
+        font-size: 18px;
+        border-radius: 5px;
+    }    
+}
+@media (max-width: 767px) {
+    .call-order {
+        margin: 45px 0 50px 0;
+    }
+    .about-us-t .call-order {
+        margin: -10px auto 0 auto;
+    }
+    .feedback .call-order {
+        width: 100%;
+        max-width: 90vw;
+    }
+}
